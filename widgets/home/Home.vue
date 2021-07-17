@@ -40,6 +40,7 @@
           <v-flex xs12 sm12 md6 lg6>
             <v-card height="100%" flat>
               <v-img
+                lazy-src="https://picsum.photos/id/11/10/6"
                 contain
                 height="100%"
                 width="100%"

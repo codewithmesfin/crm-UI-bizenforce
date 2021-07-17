@@ -10,6 +10,7 @@
           <v-card tile flat>
             <v-card-text>
               <v-img
+                lazy-src="https://picsum.photos/id/11/10/6"
                 contain
                 height="50px"
                 width="100%"

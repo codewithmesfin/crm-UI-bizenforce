@@ -14,6 +14,7 @@
               <v-layout row wrap justify-start align-center>
                 <v-flex xs4 pa-2>
                   <v-img
+                    lazy-src="https://picsum.photos/id/11/10/6"
                     :src="col.img"
                     height="100%"
                     width="100%"
@@ -63,7 +64,12 @@
                 <v-col>
                   <v-layout column align-center justify-center>
                     <v-avatar style="background: #f0f2f5" size="60">
-                      <v-img contain :src="col.img"> </v-img>
+                      <v-img
+                        lazy-src="https://picsum.photos/id/11/10/6"
+                        contain
+                        :src="col.img"
+                      >
+                      </v-img>
                     </v-avatar>
                     <v-card-text class="text-center subtitle-1">
                       <strong> {{ col.title }}</strong>

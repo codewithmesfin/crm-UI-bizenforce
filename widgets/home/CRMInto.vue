@@ -8,6 +8,7 @@
           </h1>
           <v-card flat>
             <v-img
+              lazy-src="https://picsum.photos/id/11/10/6"
               contain
               height="100%"
               width="100%"
@@ -43,6 +44,7 @@
                 <v-flex xs4 sm4 md4 lg4 pa-2>
                   <v-card flat height="100%">
                     <v-img
+                      lazy-src="https://picsum.photos/id/11/10/6"
                       contain
                       height="100%"
                       width="100%"
@@ -87,6 +89,7 @@
         <v-flex xs12 md12 md4 lg4 pa-2 v-for="item in items" :key="item.title">
           <v-card flat height="100%">
             <v-img
+              lazy-src="https://picsum.photos/id/11/10/6"
               contain
               height="100%"
               width="100%"
