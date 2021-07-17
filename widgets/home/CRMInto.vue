@@ -11,7 +11,7 @@
               contain
               height="100%"
               width="100%"
-              src="https://www.salesforce.com/content/dam/web/en_us/www../../static/images/home/php-rc-card-1-2.png"
+              src="https://www.salesforce.com/content/dam/web/en_us/www/images/home/php-rc-card-1-2.png"
               alt="crm"
             ></v-img>
             <v-card-text>
@@ -166,7 +166,7 @@ export default {
       integrations: integrations,
       items: [
         {
-          img: require("../../static../../static/images/call-center.jpg"),
+          img: require("../../static/images/call-center.jpg"),
           title: "Modern Call Center",
           route: "call-center",
           desc: `Enjoy with a browser based multi-purpose 
@@ -191,21 +191,21 @@ export default {
       crms: [
         {
           img:
-            "https://www.salesforce.com/content/dam/web/en_us/www../../static/images/home/php-rc-card-2.png",
+            "https://www.salesforce.com/content/dam/web/en_us/www/images/home/php-rc-card-2.png",
           title: "REPORT",
           subtitle: "State of Sales Report",
           desc: `Research shows nearly 6,000 sales pros are selling in a global crisis.`
         },
         {
           img:
-            "https://www.salesforce.com/content/dam/web/en_us/www../../static/images/home/php-rc-smb-navigating-through-change.jpg",
+            "https://www.salesforce.com/content/dam/web/en_us/www/images/home/php-rc-smb-navigating-through-change.jpg",
           title: "Video",
           subtitle: "Navigate through Change",
           desc: "Small businesses evolve to meet customer needs."
         },
         {
           img:
-            "https://www.salesforce.com/content/dam/web/en_us/www../../static/images/home/php-rc-card-4.png",
+            "https://www.salesforce.com/content/dam/web/en_us/www/images/home/php-rc-card-4.png",
           title: "Webinar",
           subtitle: "Lead Management",
           desc: "Get expert advice on lead management."
