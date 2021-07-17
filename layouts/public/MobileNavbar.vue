@@ -71,6 +71,26 @@
           </v-list-group>
         </template>
       </v-list>
+
+      <v-list dense>
+        <template>
+          <v-list-group>
+            <template v-slot:activator>
+              <v-list-item-content>
+                <v-list-item-title>Language </v-list-item-title>
+              </v-list-item-content>
+            </template>
+
+            <v-list dense>
+              <template v-for="(locale, i) in $i18n.locales">
+                <v-list-item :key="i" :to="switchLocalePath(locale.code)">
+                  <v-list-item-title> {{ locale.name }}</v-list-item-title>
+                </v-list-item>
+              </template>
+            </v-list>
+          </v-list-group>
+        </template>
+      </v-list>
     </v-navigation-drawer>
   </div>
 </template>
@@ -89,21 +109,7 @@ export default {
           title: "Support",
           children: [{ title: "How to use", route: "howToUse" }]
         },
-        { title: "Sore", route: "store" },
-        {
-          title: "Language",
-          children: [
-            {
-              title: "English",
-              route: "english"
-            },
-            { title: "Afaan Oroomoo", route: "oromic" },
-            {
-              title: "አማርኛ",
-              route: "amharic"
-            }
-          ]
-        }
+        { title: "Sore", route: "store" }
       ]
     };
   }
