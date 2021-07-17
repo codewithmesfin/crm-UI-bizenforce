@@ -1,4 +1,5 @@
 import colors from "vuetify/es5/util/colors";
+import i18n from "./config/i18n";
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -26,7 +27,29 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
-    "@nuxtjs/vuetify"
+    "@nuxtjs/vuetify",
+    [
+      "nuxt-i18n",
+      {
+        vueI18nLoader: true,
+        defaultLocale: "en",
+        locales: [
+          {
+            code: "en",
+            name: "English"
+          },
+          {
+            code: "am",
+            name: "አማርኛ"
+          },
+          {
+            code: "oro",
+            name: "Afaan Oroomo"
+          }
+        ],
+        vueI18n: i18n
+      }
+    ]
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules

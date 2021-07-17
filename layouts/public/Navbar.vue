@@ -86,19 +86,12 @@
           </v-btn>
         </template>
 
-        <v-list>
-          <v-list-item @click="() => {}">
-            <v-list-item-title>English</v-list-item-title>
-          </v-list-item>
-          <v-list-item @click="() => {}">
-            <v-list-item-title>አማርኛ</v-list-item-title>
-          </v-list-item>
-          <v-list-item @click="() => {}">
-            <v-list-item-title>ትግርኛ</v-list-item-title>
-          </v-list-item>
-          <v-list-item @click="() => {}">
-            <v-list-item-title>Afaan Oroomoo</v-list-item-title>
-          </v-list-item>
+        <v-list dense>
+          <template v-for="(locale, i) in $i18n.locales">
+            <v-list-item :key="i" :to="switchLocalePath(locale.code)">
+              <v-list-item-title> {{ locale.name }}</v-list-item-title>
+            </v-list-item>
+          </template>
         </v-list>
       </v-menu>
       <v-btn tile color="primary" @click="$router.push({ name: 'signin' })">

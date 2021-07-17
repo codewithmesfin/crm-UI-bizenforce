@@ -101,8 +101,7 @@ export default {
             {
               title: "አማርኛ",
               route: "amharic"
-            },
-            { title: "ትግርኛ", route: "tigrigna" }
+            }
           ]
         }
       ]

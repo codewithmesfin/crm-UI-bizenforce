@@ -7,10 +7,7 @@
             <v-card height="100%" flat>
               <v-card-text>
                 <div class="text-left">
-                  <p class="display-1 b1 text-left">
-                    Embed BizEnforce in to your business , it will keep your
-                    Sales succeed.
-                  </p>
+                  <p class="display-1 b1 text-left">{{ $t("intro") }}</p>
                   <p class="subtitle-1 px-1 black--text">
                     <router-link to> See how</router-link>
                     Tesfa increased sales revenue by 5X with BizEnforce.
