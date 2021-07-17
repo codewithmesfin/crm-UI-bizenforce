@@ -20,6 +20,18 @@
                     width="100%"
                     min-height="90px"
                   >
+                    <template v-slot:placeholder>
+                      <v-row
+                        class="fill-height ma-0"
+                        align="center"
+                        justify="center"
+                      >
+                        <v-progress-circular
+                          indeterminate
+                          color="grey lighten-5"
+                        ></v-progress-circular>
+                      </v-row>
+                    </template>
                   </v-img>
                 </v-flex>
                 <v-flex xs8 pa-2>
@@ -69,6 +81,18 @@
                         contain
                         :src="col.img"
                       >
+                        <template v-slot:placeholder>
+                          <v-row
+                            class="fill-height ma-0"
+                            align="center"
+                            justify="center"
+                          >
+                            <v-progress-circular
+                              indeterminate
+                              color="grey lighten-5"
+                            ></v-progress-circular>
+                          </v-row>
+                        </template>
                       </v-img>
                     </v-avatar>
                     <v-card-text class="text-center subtitle-1">

@@ -14,7 +14,16 @@
               width="100%"
               src="https://www.salesforce.com/content/dam/web/en_us/www/images/home/php-rc-card-1-2.png"
               alt="crm"
-            ></v-img>
+            >
+              <template v-slot:placeholder>
+                <v-row class="fill-height ma-0" align="center" justify="center">
+                  <v-progress-circular
+                    indeterminate
+                    color="grey lighten-5"
+                  ></v-progress-circular>
+                </v-row>
+              </template>
+            </v-img>
             <v-card-text>
               <h1 class="title b1">How to Get Customers?</h1>
               <p class="body-1">
@@ -50,7 +59,20 @@
                       width="100%"
                       :src="item.img"
                       :alt="item.title"
-                    ></v-img>
+                    >
+                      <template v-slot:placeholder>
+                        <v-row
+                          class="fill-height ma-0"
+                          align="center"
+                          justify="center"
+                        >
+                          <v-progress-circular
+                            indeterminate
+                            color="grey lighten-5"
+                          ></v-progress-circular>
+                        </v-row>
+                      </template>
+                    </v-img>
                   </v-card>
                 </v-flex>
                 <v-flex xs8 pa-2>
@@ -96,7 +118,16 @@
               max-height="200px"
               :src="item.img"
               :alt="item.title"
-            ></v-img>
+            >
+              <template v-slot:placeholder>
+                <v-row class="fill-height ma-0" align="center" justify="center">
+                  <v-progress-circular
+                    indeterminate
+                    color="grey lighten-5"
+                  ></v-progress-circular>
+                </v-row>
+              </template>
+            </v-img>
             <v-card-text>
               <p class="display-1 b1">
                 {{ item.title }}
