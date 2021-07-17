@@ -3,7 +3,7 @@
     <section>
       <v-container fluid>
         <v-layout row wrap justify-end align-center>
-          <v-flex xs12 sm12 md5 lg5 pa-2>
+          <v-flex xs12 sm12 md5 lg5 pa-1>
             <v-card height="100%" flat>
               <v-card-text>
                 <div class="text-left">

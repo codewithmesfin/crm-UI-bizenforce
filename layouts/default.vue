@@ -1,15 +1,15 @@
 <template>
-  <v-app>
-    <div class="d-none d-md-block"><navbar /></div>
-    <div class="d-block d-md-none">
+  <v-app dark>
+    <div class="d-none d-md-block">
+      <navbar />
+    </div>
+    <div class="d-md-none d-block">
       <mobile-navbar />
     </div>
-    <v-main>
+    <div class="main-root">
       <Nuxt />
-    </v-main>
-    <v-btn fab dark fixed bottom right color="success" small>
-      <v-icon>mdi-chat</v-icon>
-    </v-btn>
+    </div>
+
     <Footer />
   </v-app>
 </template>
@@ -29,3 +29,9 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.main-root {
+  margin-top: 64px !important;
+}
+</style>
