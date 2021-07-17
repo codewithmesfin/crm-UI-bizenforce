@@ -1,13 +1,15 @@
 <template>
-  <v-app dark>
-    <div class="d-none d-md-block">
-      <navbar />
-    </div>
-    <div class="d-md-none d-block">
+  <v-app>
+    <div class="d-none d-md-block"><navbar /></div>
+    <div class="d-block d-md-none">
       <mobile-navbar />
     </div>
-    <Nuxt />
-
+    <v-main>
+      <Nuxt />
+    </v-main>
+    <v-btn fab dark fixed bottom right color="success" small>
+      <v-icon>mdi-chat</v-icon>
+    </v-btn>
     <Footer />
   </v-app>
 </template>
