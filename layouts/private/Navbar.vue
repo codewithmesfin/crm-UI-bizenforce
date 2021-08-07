@@ -2,6 +2,7 @@
   <div>
     <v-app-bar
       flat
+      dense
       class="d-none d-md-block"
       app
       clipped-left
@@ -32,14 +33,7 @@
         text
         class="text-capitalize"
         @click="$router.push({ name: 'home' })"
-        >About
-      </v-btn>
-
-      <v-btn
-        text
-        class="text-capitalize"
-        @click="$router.push({ name: 'home' })"
-        >Why?
+        >Learn
       </v-btn>
       <v-menu left bottom>
         <template v-slot:activator="{ on, attrs }">
@@ -64,17 +58,17 @@
         <v-icon>mdi-layers-outline</v-icon>
       </v-btn>
 
-      <v-btn
-        text
-        class="text-capitalize"
-        @click="$router.push({ name: 'home' })"
-        >Contact us
+      <v-btn icon>
+        <v-badge dot left overlap color="pink" class="mx-3 pr-3">
+          <span slot="badge"></span>
+          <v-icon>mdi-bell-ring-outline</v-icon>
+        </v-badge>
       </v-btn>
 
       <v-btn icon>
         <v-badge dot left overlap color="pink" class="mx-3 pr-3">
           <span slot="badge"></span>
-          <v-icon>mdi-bell-ring-outline</v-icon>
+          <v-icon>mdi-chat</v-icon>
         </v-badge>
       </v-btn>
 
@@ -94,8 +88,8 @@
           </template>
         </v-list>
       </v-menu>
-      <v-btn tile color="primary" @click="$router.push({ name: 'signin' })">
-        Sign In
+      <v-btn icon @click="$router.push({ name: 'signin' })">
+        <v-icon>mdi-cog</v-icon>
       </v-btn>
     </v-app-bar>
   </div>
